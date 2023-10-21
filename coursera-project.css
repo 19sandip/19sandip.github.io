@@ -1,1 +1,75 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
 
+    }
+    h1 {
+        background-color: orangered;
+        font-size: bolder;
+        text-align: center;
+        margin: 19px;
+        padding: 15px;
+    
+    }
+    .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+        
+    }
+    .item {
+        background-color: lightcoral;
+        border: 2px solid black;
+        margin: 7px;
+        padding: 40px 10px 10px 10px;
+         position: relative;
+    }
+
+    .item1 {
+        background-color: rgb(64, 64, 167);
+        flex: 1;
+    }
+    .item2 {
+        background-color:  rgb(197, 68, 159);
+        flex: 1;
+    }
+    .item3 {
+        background-color: lawngreen;
+        flex: 1;
+    }
+     .box {
+        background-color: lightseagreen;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 5px;
+        border: 1px solid black;
+        
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        .container .item {
+            margin: 10px;
+            flex-basis: 40%;
+        }
+        .container .item:last-child {
+            flex-basis: 100%;
+            margin: 10px;
+        }
+    }
+    @media (max-width: 767px) {
+        .container .item {
+            flex-basis: 100%;
+            margin:10px;
+        }
+    }
+
+
+    
+      
